@@ -9,7 +9,7 @@ import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class Intake extends SubsystemBase {
   /* Give the subsystem the motors it needs */
-   motor = new VictorSP(0);
+  
 
   /* Creates a new DriveTrain. */
   public Intake() {
