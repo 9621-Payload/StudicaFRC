@@ -5,22 +5,37 @@
 package frc.robot;
 
 /**
- * The Constants class provides a convenient place for teams to hold robot-wide numerical or boolean
- * constants. This class should not be used for any other purpose. All constants should be declared
+ * The Constants class provides a convenient place for teams to hold robot-wide
+ * numerical or boolean
+ * constants. This class should not be used for any other purpose. All constants
+ * should be declared
  * globally (i.e. public static). Do not put anything functional in this class.
  *
- * <p>It is advised to statically import this class (or one of its inner classes) wherever the
+ * <p>
+ * It is advised to statically import this class (or one of its inner classes)
+ * wherever the
  * constants are needed, to reduce verbosity.
  */
 public final class Constants {
   public static class OperatorConstants {
     public static final int kDriverControllerPort = 0;
+
+    public static final int kA = 1,
+        kB = 2,
+        kX = 3,
+        kY = 4,
+        kLB = 5,
+        kRB = 6,
+        kMENU = 7,
+        kSTART = 8,
+        kLA = 9,
+        kRA = 10;
   }
 
   public static class TankDriveConstants {
     public static final double kSpeedFactor = 0.5;
 
-    public static final int frontLeftId = 4;    
+    public static final int frontLeftId = 4;
     public static final int backLeftId = 3;
     public static final int frontRightId = 2;
     public static final int backRightId = 1;
@@ -28,6 +43,19 @@ public final class Constants {
   }
 
   public static class IntakeConstants {
-    public static final int MotorCAN = 6;
+    public static final int MotorId = 5;
+  }
+
+  public static class ArmConstants {
+    public static final int MotorId = 6;
+    public static final double gearRatio = 71;
+
+    public static int EncChannelA = 1;
+    public static int EncChannelB = 2;
+    public static int EncPPR = 7;
+
+    public static double maxAngle = 74.0,
+        positionToleranceAngle = 1;
+
   }
 }
